@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/atom10full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+  <title>Nick Sieger</title>
+  <subtitle type="html">Working with glue that doesn't set</subtitle>
+  <id>tag:blog.nicksieger.com,2005:Typo</id>
+  <generator uri="http://www.typosphere.org" version="4.0">Typo</generator>
+  
+  <link href="http://blog.nicksieger.com/" rel="alternate" type="text/html" />
+  <updated>2007-07-27T06:03:36+00:00</updated>
+
+  <link rel="self" href="http://feeds.feedburner.com/nicksieger" type="application/atom+xml" /><entry>
+    <author>
+      <name>Nick Sieger</name>
+    </author>
+    <id>urn:uuid:4068a45c-e39d-4a32-9787-a1825530af06</id>
+    <published>2007-07-26T22:49:52+00:00</published>
+    <updated>2007-07-27T06:03:36+00:00</updated>
+
+    <title>Gig: JRuby and Glassfish Hackfest</title>
+    <link href="http://blog.nicksieger.com/articles/2007/07/26/gig-jruby-and-glassfish-hackfest" rel="alternate" type="text/html" />
+    <category term="jruby" scheme="http://blog.nicksieger.com/articles/tag/jruby" />
+    <category term="glassfish" scheme="http://blog.nicksieger.com/articles/tag/glassfish" />
+    <category term="sun" scheme="http://blog.nicksieger.com/articles/tag/sun" />
+    <category term="joyent" scheme="http://blog.nicksieger.com/articles/tag/joyent" />
+    <content type="html">&lt;p&gt;I&amp;#8217;ll be speaking and participating at an upcoming event at the &lt;a href="http://axis-cafe.com/" title="Welcome to Axis-Cafe.com"&gt;Axis Caf&eacute;&lt;/a&gt; in Potrero Hill, San Francisco on August 8, co-hosted by &lt;a href="http://www.sun.com/"&gt;Sun Microsystems&lt;/a&gt; (my new employer as of mid-May), and &lt;a href="http://joyent.com/" title="Joyent: Introducing Joyent"&gt;Joyent&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We&amp;#8217;ll be talking &lt;a href="http://jruby.codehaus.org/" title="JRuby - Home"&gt;JRuby&lt;/a&gt;, &lt;a href="http://glassfish.dev.java.net"&gt;Glassfish&lt;/a&gt;, &lt;a href="http://www.opensolaris.org/" title="Home at OpenSolaris.org"&gt;Open Solaris&lt;/a&gt;, &lt;a href="http://www.joyent.com/accelerator/" title="Joyent: Accelerator"&gt;Joyent Accelerators&lt;/a&gt;, and deploying your Rails applications using those technologies.  Bring your laptop, outfitted with your &lt;a href="http://deadlock.netbeans.org/hudson/job/ruby/"&gt;favorite Ruby editor/IDE&lt;/a&gt;, and get ready to write some code (or, if you wish, take your existing app and deploy it).&lt;/p&gt;
+
+&lt;p&gt;Food and drinks will be provided, and space is limited, so &lt;a href="http://events-at-sun.com/hackday/"&gt;go register now&lt;/a&gt;.  Look forward to seeing you!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author>
+      <name>Nick Sieger</name>
+
+    </author>
+    <id>urn:uuid:b93bb2cb-8904-43f6-92a4-2b9343fccd50</id>
+    <published>2007-07-13T09:39:00+00:00</published>
+    <updated>2007-07-27T06:04:19+00:00</updated>
+    <title>Pause</title>
+    <link href="http://blog.nicksieger.com/articles/2007/07/13/pause" rel="alternate" type="text/html" />
+    <content type="html">&lt;p&gt;The size of this blog seems to have outgrown the small 128MB VPS it&amp;#8217;s running on.  Any post/comment/change causes the server to swap endlessly, and I know some of you have seen 500 or 502 errors.  I hope to remedy this soon, but until then, comments have been disabled, and the site will remain more or less frozen.&lt;/p&gt;
+
+&lt;p&gt;If you do have a comment, please send it to me the old-skool way (email &amp;#8211; with your name and URL and the article you&amp;#8217;re commenting on), and I&amp;#8217;d be happy to add it for you for historical purposes.&lt;/p&gt;
+
+&lt;p&gt;If you have any ideas on tuning my servers to avoid hitting the memory limit, I&amp;#8217;d appreciate those as well.  I&amp;#8217;m currently running Ubuntu Dapper with Apache 2.0, Ruby 1.8.4, Mongrel 1.0 with fastthread 0.6.1, Typo SVN revision 947 (a bit old, I know), and SQLite 2.  Upgrade to the latest Ruby?  Upgrade Typo &amp;#8211; yeah, that would be a little more painful.  Switch to Mephisto &amp;#8211; more painful still.  Ditch Apache in favor of nginx?  Probably, except I&amp;#8217;m using Apache for SVN and Trac as well.  We&amp;#8217;ll see.&lt;/p&gt;
+
+&lt;p&gt;I tried running MySQL (4.1) for a while last night, but it too was swapping and the site wouldn&amp;#8217;t even render, so I turned off and reverted to SQLite, which at least allows the site to load, even if it blows chunks when you try to post a comment or an article.  Sigh.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author>
+      <name>Nick Sieger</name>
+    </author>
+
+    <id>urn:uuid:0ddce74b-0d31-440d-8f1b-6abd235ad340</id>
+    <published>2007-07-12T08:27:00+00:00</published>
+    <updated>2007-07-27T06:04:27+00:00</updated>
+    <title>Post-JRuby-1.0 Bits and Bobs</title>
+    <link href="http://blog.nicksieger.com/articles/2007/07/12/post-jruby-1-0-bits-and-bobs" rel="alternate" type="text/html" />
+    <category term="jruby" scheme="http://blog.nicksieger.com/articles/tag/jruby" />
+    <content type="html">&lt;p&gt;Summer is settling in, and so is the &lt;a href="/articles/2007/06/10/jruby-1-0"&gt;JRuby 1.0 release&lt;/a&gt;.  Most of the core team seemed to take some time off since the release, as the &lt;a href="http://svn.jruby.codehaus.org/changelog/jruby/"&gt;commits&lt;/a&gt; and &lt;a href="http://www.nabble.com/JRuby-f14106.html"&gt;lists&lt;/a&gt; have felt quiet compared to the frenetic lead-up to 1.0.  I don&amp;#8217;t know if that&amp;#8217;s a good thing yet &amp;#8211; I&amp;#8217;m not bold enough to suggest that it means that JRuby&amp;#8217;s just working for everyone, and that the software is bug-free.  There have been calls for a point release (probably 1.0.1) and a better &lt;a href="http://www.headius.com/jrubywiki/index.php/Roadmap"&gt;roadmap&lt;/a&gt; &amp;#8211; we&amp;#8217;re working on those and should have something in the next couple of weeks.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, the number and quality of &lt;a href="http://blogsearch.google.com/blogsearch?hl=en&amp;amp;q=jruby&amp;amp;ie=UTF-8&amp;amp;scoring=d"&gt;blog posts&lt;/a&gt; &lt;a href="http://technorati.com/search/jruby"&gt;about&lt;/a&gt; &lt;a href="http://www.bloglines.com/search?q=jruby&amp;amp;ql=en&amp;amp;s=f&amp;amp;pop=l&amp;amp;news=m"&gt;JRuby&lt;/a&gt; seem to be steadily increasing.  The number of compelling applications of JRuby, both in the Ruby/Rails and the Java worlds, are being demonstrated more and more.  Here are a few examples.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://java.sun.com/products/jms/" title="Java Message Service (JMS)"&gt;JMS&lt;/a&gt; is turning out to be a great place to sprinkle some JRuby magic.  &lt;a href="http://groups.google.com/group/activemessaging-discuss/browse_thread/thread/d3cfc1a4c25f3ce7/2709cdb64e333332#2709cdb64e333332"&gt;Ola started by implementing direct JMS support&lt;/a&gt; for &lt;a href="http://code.google.com/p/activemessaging/wiki/ActiveMessaging" title="ActiveMessaging - activemessaging - Google Code"&gt;ActiveMessaging&lt;/a&gt;, eliminating the need for the separate poller process.  &lt;a href="http://nutrun.com/weblog/jms-with-jruby-and-activemq/"&gt;Nutrun&lt;/a&gt; goes the other way and demonstrates how simple it is to run a broker, publisher and subscriber using &lt;a href="http://activemq.apache.org/" title="Apache ActiveMQ -- Index"&gt;ActiveMQ&lt;/a&gt; and a short JRuby script.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://jmesnil.net/weblog/2007/06/11/jmx4r-a-jmx-libary-for-jruby/"&gt;Jeff Mesnil&lt;/a&gt; has started &lt;a href="http://code.google.com/p/jmx4r/" title="jmx4r - Google Code"&gt;jmx4r&lt;/a&gt;, a simple DSL leveraging JRuby to write monitoring scripts for your JMX-enabled applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://mojodna.net/2007/05/19/jruby-lucene-and-rejectconf/"&gt;Kyle Maxwell&lt;/a&gt; whipped up a compelling plugin for Rails in time for RejectConf using &lt;a href="http://lucene.apache.org/java/docs/" title="Apache Lucene - Overview"&gt;Lucene&lt;/a&gt;.  Why &lt;a href="http://ferret.davebalmain.com/trac/"&gt;imitate&lt;/a&gt; when you can use the real thing?&lt;/p&gt;
+
+&lt;p&gt;Zed Shaw has caught the JRuby bug, and decided to do his own take on scripted Swing applications with &lt;a href="http://ihate.rubyforge.org/profligacy/index.html"&gt;Profligacy&lt;/a&gt;.  &lt;a href="http://pastie.caboo.se/75065"&gt;Check&lt;/a&gt; &lt;a href="http://pastie.caboo.se/75067"&gt;out&lt;/a&gt; &lt;a href="http://pastie.caboo.se/75276"&gt;the&lt;/a&gt; &lt;a href="http://pastie.caboo.se/75485"&gt;progression&lt;/a&gt; &lt;a href="http://pastie.caboo.se/76430"&gt;of&lt;/a&gt; &lt;a href="http://pastie.caboo.se/76438"&gt;examples&lt;/a&gt; as Zed &lt;a href="http://pastie.caboo.se/76960"&gt;hones in&lt;/a&gt; on his &lt;a href="http://ihate.rubyforge.org/profligacy/images/chat_proto_right.png"&gt;final product&lt;/a&gt;.  As &lt;a href="http://blog.zerosum.org/?q=node/65"&gt;nap points out&lt;/a&gt;, Zed&amp;#8217;s Layout Expression Language (LEL) is a refreshingly concise take on specifying UI layouts.  Cleaner separation of component layout and event handling logic is also a big win.  Move over Groovy SwingBuilder and JavaFX!&lt;/p&gt;
+
+&lt;p&gt;Last but not least, my own &lt;a href="/articles/2006/12/01/rspec-jruby-mocking-and-multiple-interfaces"&gt;earlier proposal on Java interface integration&lt;/a&gt; has &lt;a href="http://jira.codehaus.org/browse/JRUBY-991"&gt;been implemented in current JRuby trunk&lt;/a&gt;.  Along the way I found the opportunity to toss in some extra sugar and implement proc and block coercion to interfaces as well.  This means you can pass a proc or block to a Java method and it will be converted to the appropriate Java interface type (e.g., &lt;code&gt;Runnable&lt;/code&gt; and Swing/AWT listeners):&lt;/p&gt;
+
+&lt;div class="typocode"&gt;&lt;pre&gt;&lt;code class="typocode_ruby "&gt;&lt;span class="ident"&gt;button&lt;/span&gt; &lt;span class="punct"&gt;=&lt;/span&gt; &lt;span class="constant"&gt;JButton&lt;/span&gt;&lt;span class="punct"&gt;.&lt;/span&gt;&lt;span class="ident"&gt;new&lt;/span&gt;
+
+&lt;span class="ident"&gt;button&lt;/span&gt;&lt;span class="punct"&gt;.&lt;/span&gt;&lt;span class="ident"&gt;add_action_listener&lt;/span&gt; &lt;span class="keyword"&gt;do&lt;/span&gt; &lt;span class="punct"&gt;|&lt;/span&gt;&lt;span class="ident"&gt;event&lt;/span&gt;&lt;span class="punct"&gt;|&lt;/span&gt;
+
+  &lt;span class="ident"&gt;event&lt;/span&gt;&lt;span class="punct"&gt;.&lt;/span&gt;&lt;span class="ident"&gt;source&lt;/span&gt;&lt;span class="punct"&gt;.&lt;/span&gt;&lt;span class="ident"&gt;text&lt;/span&gt; &lt;span class="punct"&gt;=&lt;/span&gt; &lt;span class="punct"&gt;&amp;quot;&lt;/span&gt;&lt;span class="string"&gt;You pressed me&lt;/span&gt;&lt;span class="punct"&gt;&amp;quot;&lt;/span&gt;
+
+&lt;span class="keyword"&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If &lt;a href="http://gafter.blogspot.com/2006/08/closures-for-java.html" title="Neal Gafter's blog: Closures for Java"&gt;closures for Java&lt;/a&gt; can&amp;#8217;t do this, they will have gotten it wrong. Note that blocks will be converted and used in place of the last argument to the Java method only; if you need to pass behavior to any argument preceding the last, use a proc.  &lt;a href="http://pastie.caboo.se/75142"&gt;Here&amp;#8217;s one example&lt;/a&gt; that gets progressively better as we switch over to blocks.&lt;/p&gt;
+
+&lt;p&gt;Two parting thoughts &amp;#8211; a couple of things that aren&amp;#8217;t quite ready, but you should keep your eye on.&lt;/p&gt;
+
+&lt;p&gt;Glassfish dev Jean-Fran&amp;ccedil;ois Arcand demonstrates &lt;a href="http://weblogs.java.net/blog/jfarcand/archive/2007/05/jruby_on_grizzl_1.html"&gt;parked Rails requests with Grizzly&lt;/a&gt;.  And you thought you had to do &lt;em&gt;comet&lt;/em&gt;-style request handling outside of Rails?  The future of scalable Rails servers looks pretty good to me.&lt;/p&gt;
+
+&lt;p&gt;Finally, respected object technologist Alan McKean has &lt;a href="http://www.nabble.com/forum/Search.jtp?forum=14106&amp;amp;local=y&amp;amp;query=alan+mckean"&gt;started looking at object serialization and persistence for JRuby&lt;/a&gt;.  You thought you had to wait for that Gemstone-thing that &lt;a href="http://gilesbowkett.blogspot.com/2007/05/avi-bryants-railsconf-keynote-ruby-can.html"&gt;Avi Bryant mentioned at RailsConf&lt;/a&gt;?  Maybe the wait won&amp;#8217;t be too long after all&amp;#8230;&lt;/p&gt;</content>
+
+  </entry>
+  <entry>
+    <author>
+      <name>Nick Sieger</name>
+    </author>
+    <id>urn:uuid:97cbdf32-ed82-430e-a874-f7fd98b2e999</id>
+    <published>2007-06-11T15:35:00+00:00</published>
+
+    <updated>2007-07-27T06:04:35+00:00</updated>
+    <title>Test Your Rake Tasks</title>
+    <link href="http://blog.nicksieger.com/articles/2007/06/11/test-your-rake-tasks" rel="alternate" type="text/html" />
+    <category term="ruby" scheme="http://blog.nicksieger.com/articles/tag/ruby" />
+    <category term="testing" scheme="http://blog.nicksieger.com/articles/tag/testing" />
+    <content type="html">&lt;p&gt;Many libraries and plugins ship custom Rake tasks.  Of course, as slick as Rake is for a build and configuration language, it&amp;#8217;s still just Ruby code right?  &lt;/p&gt;
+
+&lt;p&gt;Case in point: I released a version of &lt;a href="http://caldersphere.rubyforge.org/ci_reporter"&gt;&lt;code&gt;ci_reporter&lt;/code&gt;&lt;/a&gt; with a fairly careless bug in a rake task that attempted to &lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt; a string into an existing environment variable.  It escaped me at the time that Ruby sets up the &lt;code&gt;ENV&lt;/code&gt; hash with frozen strings, because my own usage of ci_reporter did not exercise the task in that way.&lt;/p&gt;
+
+&lt;p&gt;So shouldn&amp;#8217;t that Ruby code be subjected to the rigor of automated testing just like the rest of your code?  It became obvious to me that it must be so.  It turns out it&amp;#8217;s straightforward to use Rake in an embedded fashion, and invoke targeted tasks in your custom Rake recipes.  The examples here use RSpec, since that&amp;#8217;s what I use for testing &lt;code&gt;ci_reporter&lt;/code&gt;, but you could apply this to &lt;code&gt;Test::Unit&lt;/code&gt; as well.&lt;/p&gt;
+
+&lt;p&gt;The technique is to create a new instance of &lt;code&gt;Rake::Application&lt;/code&gt;, make it the active application, and load your rake scripts into it:&lt;/p&gt;
+
+&lt;div class="typocode"&gt;&lt;pre&gt;&lt;code class="typocode_ruby "&gt;&lt;span class="ident"&gt;describe&lt;/span&gt; &lt;span class="punct"&gt;&amp;quot;&lt;/span&gt;&lt;span class="string"&gt;ci_reporter ci:setup:testunit task&lt;/span&gt;&lt;span class="punct"&gt;&amp;quot;&lt;/span&gt; &lt;span class="keyword"&gt;do&lt;/span&gt;
+
+  &lt;span class="ident"&gt;before&lt;/span&gt;&lt;span class="punct"&gt;(&lt;/span&gt;&lt;span class="symbol"&gt;:each&lt;/span&gt;&lt;span class="punct"&gt;)&lt;/span&gt; &lt;span class="keyword"&gt;do&lt;/span&gt;
+
+    &lt;span class="attribute"&gt;@rake&lt;/span&gt; &lt;span class="punct"&gt;=&lt;/span&gt; &lt;span class="constant"&gt;Rake&lt;/span&gt;&lt;span class="punct"&gt;::&lt;/span&gt;&lt;span class="constant"&gt;Application&lt;/span&gt;&lt;span class="punct"&gt;.&lt;/span&gt;&lt;span class="ident"&gt;new&lt;/span&gt;
+
+    &lt;span class="constant"&gt;Rake&lt;/span&gt;&lt;span class="punct"&gt;.&lt;/span&gt;&lt;span class="ident"&gt;application&lt;/span&gt; &lt;span class="punct"&gt;=&lt;/span&gt; &lt;span class="attribute"&gt;@rake&lt;/span&gt;
+
+    &lt;span class="ident"&gt;load&lt;/span&gt; &lt;span class="constant"&gt;CI_REPORTER_LIB&lt;/span&gt; &lt;span class="punct"&gt;+&lt;/span&gt; &lt;span class="punct"&gt;'&lt;/span&gt;&lt;span class="string"&gt;/ci/reporter/rake/test_unit.rb&lt;/span&gt;&lt;span class="punct"&gt;'&lt;/span&gt;
+
+  &lt;span class="keyword"&gt;end&lt;/span&gt;
+  &lt;span class="ident"&gt;after&lt;/span&gt;&lt;span class="punct"&gt;(&lt;/span&gt;&lt;span class="symbol"&gt;:each&lt;/span&gt;&lt;span class="punct"&gt;)&lt;/span&gt; &lt;span class="keyword"&gt;do&lt;/span&gt;
+
+    &lt;span class="constant"&gt;Rake&lt;/span&gt;&lt;span class="punct"&gt;.&lt;/span&gt;&lt;span class="ident"&gt;application&lt;/span&gt; &lt;span class="punct"&gt;=&lt;/span&gt; &lt;span class="constant"&gt;nil&lt;/span&gt;
+
+  &lt;span class="keyword"&gt;end&lt;/span&gt;
+  &lt;span class="comment"&gt;# ...&lt;/span&gt;
+&lt;span class="keyword"&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Notice the use of &lt;code&gt;#load&lt;/code&gt; rather than &lt;code&gt;#require&lt;/code&gt;, as you want to execute your rake script each time you setup the Rake application object.  When tearing down your test or example, you should cleanup Rake by setting the &lt;code&gt;Rake.application&lt;/code&gt; back to nil (or save the previous application and restore it, if you prefer).&lt;/p&gt;
+
+&lt;p&gt;Now, in the body of your test or example, you invoke your rake task with &lt;code&gt;@rake['target'].invoke&lt;/code&gt;.  Here, I&amp;#8217;m exercising the case of an existing, frozen &lt;code&gt;ENV&lt;/code&gt; value.  After the task is invoked, I check the value after the task to make sure the variable was modified as expected.&lt;/p&gt;
+
+&lt;div class="typocode"&gt;&lt;pre&gt;&lt;code class="typocode_ruby "&gt;&lt;span class="ident"&gt;it&lt;/span&gt; &lt;span class="punct"&gt;&amp;quot;&lt;/span&gt;&lt;span class="string"&gt;should append to ENV['TESTOPTS'] if it already contains a value&lt;/span&gt;&lt;span class="punct"&gt;&amp;quot;&lt;/span&gt; &lt;span class="keyword"&gt;do&lt;/span&gt;
+
+  &lt;span class="constant"&gt;ENV&lt;/span&gt;&lt;span class="punct"&gt;[&amp;quot;&lt;/span&gt;&lt;span class="string"&gt;TESTOPTS&lt;/span&gt;&lt;span class="punct"&gt;&amp;quot;]&lt;/span&gt; &lt;span class="punct"&gt;=&lt;/span&gt; &lt;span class="punct"&gt;&amp;quot;&lt;/span&gt;&lt;span class="string"&gt;somevalue&lt;/span&gt;&lt;span class="punct"&gt;&amp;quot;.&lt;/span&gt;&lt;span class="ident"&gt;freeze&lt;/span&gt;
+
+  &lt;span class="attribute"&gt;@rake&lt;/span&gt;&lt;span class="punct"&gt;[&amp;quot;&lt;/span&gt;&lt;span class="string"&gt;ci:setup:testunit&lt;/span&gt;&lt;span class="punct"&gt;&amp;quot;].&lt;/span&gt;&lt;span class="ident"&gt;invoke&lt;/span&gt;
+
+  &lt;span class="constant"&gt;ENV&lt;/span&gt;&lt;span class="punct"&gt;[&amp;quot;&lt;/span&gt;&lt;span class="string"&gt;TESTOPTS&lt;/span&gt;&lt;span class="punct"&gt;&amp;quot;].&lt;/span&gt;&lt;span class="ident"&gt;should&lt;/span&gt; &lt;span class="punct"&gt;=~&lt;/span&gt; &lt;span class="punct"&gt;/&lt;/span&gt;&lt;span class="regex"&gt;somevalue.*test_unit_loader&lt;/span&gt;&lt;span class="punct"&gt;/&lt;/span&gt;
+
+&lt;span class="keyword"&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I was fortunate here that the tasks for which I wrote tests after the fact were simple enough to be testable on their own, which may not always be the case, especially with organic, homegrown Rake tasks that interact with the world outside of Ruby.  Still, if your Rake tasks are a critical part of your application, library or plugin, they should be tested.  For example, it would be nice if tests could be written for the Rake scripts in Rails&amp;#8217; Railties module to increase coverage there.&lt;/p&gt;
+
+&lt;p&gt;Perhaps someone out there will run with this idea and take up the challenge and write a Rakefile completely in a test-driven or behaviour-driven style.  It&amp;#8217;s always been a sore point for me with Make, Ant, Maven, and virtually every other build tool in existence that you have no other way of automatically verifying your build script is doing what you intended without manually running it and inspecting its output &amp;#8211; it just feels so dirty!  I&amp;#8217;d expect that test-driven Rake scripts would likely have the level of granularity to match the tasks that need to be done, in a way that you can combine them in the right ways to make incremental and deconstructed builds simpler.&lt;/p&gt;</content>
+
+  </entry>
+  <entry>
+    <author>
+      <name>Nick Sieger</name>
+    </author>
+    <id>urn:uuid:774d62fd-eba2-4586-8da6-cbde414851b7</id>
+    <published>2007-06-10T04:03:00+00:00</published>
+
+    <updated>2007-07-27T06:04:40+00:00</updated>
+    <title>JRuby 1.0</title>
+    <link href="http://blog.nicksieger.com/articles/2007/06/10/jruby-1-0" rel="alternate" type="text/html" />
+    <category term="ruby" scheme="http://blog.nicksieger.com/articles/tag/ruby" />
+    <category term="jruby" scheme="http://blog.nicksieger.com/articles/tag/jruby" />
+    <content type="html">&lt;p&gt;I&amp;#8217;d just like to take a moment to echo what &lt;a href="http://ola-bini.blogspot.com/2007/06/jruby-10.html"&gt;Ola has to say&lt;/a&gt; about the JRuby 1.0 release.  This one is definitely for all of you out there.  It&amp;#8217;s been incredibly gratifying to see the growth of the community, and the increased amount of positive feedback and success stories with JRuby, and I&amp;#8217;m honored to have been part of the team that made 1.0 happen.&lt;/p&gt;
+
+&lt;p&gt;We really feel strongly that we&amp;#8217;ve put out a quality piece of software, a tool that will make your work more enjoyable, easier, and allow you to inject some creativity and innovation back into the Java stack.&lt;/p&gt;
+
+&lt;p&gt;We&amp;#8217;ve got a solid base to start from.  &lt;a href="http://www.headius.com/jrubywiki/index.php/JRuby_on_Rails"&gt;Being able to run Rails&lt;/a&gt; is no small feat, to be sure, but the best is yet to come.  You can expect more performance, a complete compiler, support for more applications, and tighter integration with long-standing Java technologies.  In addition, we&amp;#8217;d like to push the envelope of what both Ruby and Java are capable of, including implementing (even driving) Ruby 2.0 features, leading the way for dynamic language support in the JVM, eased as well as novel ways of doing application deployment, better debugging and tooling, and experiments with new ways of doing concurrent and parallel computing.&lt;/p&gt;
+
+&lt;p&gt;Do join up with us &amp;#8211; it&amp;#8217;s never too late to hop in and enjoy the fun!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author>
+      <name>Nick Sieger</name>
+    </author>
+
+    <id>urn:uuid:08507152-87fb-40ee-9e73-b3644c2c5619</id>
+    <published>2007-05-24T17:16:05+00:00</published>
+    <updated>2007-07-27T06:04:47+00:00</updated>
+    <title>Rare Rubies</title>
+    <link href="http://blog.nicksieger.com/articles/2007/05/24/rare-rubies" rel="alternate" type="text/html" />
+    <category term="ruby" scheme="http://blog.nicksieger.com/articles/tag/ruby" />
+    <content type="html">&lt;p&gt;Stumbling upon a description of a &lt;a href="http://www.mnh.si.edu/exhibits/ruby/index.htm"&gt;rare Burmese Ruby gemstone housed in the Smithsonian&lt;/a&gt;, this line popped out at me:&lt;/p&gt;
+
+&lt;blockquote&gt;
+    &lt;p&gt;While sapphire, emerald and diamond gems weighing hundreds of carats exist, high quality Burmese rubies larger than 20 carats are exceedingly rare.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We could rephrase that a bit:&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+    &lt;p&gt;While Java, C++, and C# programs weighing hundreds of thousands of lines of code exist, high quality Ruby programs larger than 2000 lines are exceedingly rare.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Isn&amp;#8217;t it strange how you &lt;a href="http://en.wikipedia.org/wiki/Snowclone"&gt;hardly notice a difference&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://www.mnh.si.edu/exhibits/images/ruby/main_ruby2.jpg" alt="Carmen Lucia Ruby"/&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author>
+      <name>Nick Sieger</name>
+    </author>
+    <id>urn:uuid:ab53b976-cff8-410d-8047-793abbb363a2</id>
+
+    <published>2007-05-23T05:51:36+00:00</published>
+    <updated>2007-07-27T06:04:53+00:00</updated>
+    <title>geekSessions I: Ruby on Rails: To Scale or Not to Scale</title>
+    <link href="http://blog.nicksieger.com/articles/2007/05/23/geeksessions-i-ruby-on-rails-to-scale-or-not-to-scale" rel="alternate" type="text/html" />
+    <category term="ruby" scheme="http://blog.nicksieger.com/articles/tag/ruby" />
+    <category term="rails" scheme="http://blog.nicksieger.com/articles/tag/rails" />
+    <content type="html">&lt;p&gt;I was fortunate to be in town right after RailsConf and attended the inaugural &lt;a href="http://www.geeksessions.com/"&gt;geekSessions&lt;/a&gt; event on Rails scalibility.  The event went off without a hitch: it was well attended, City Club is a classy place, and there was decent food and an open bar.  I don&amp;#8217;t know the SF geek/startup scene, but pretty much all of the few guys I know were there along with a ton of other folks.  My only complaint would have been to let it run at least 30 minutes longer.  Socializing was good too, but it seemed like the conversation was just getting started.&lt;/p&gt;
+
+&lt;p&gt;Here are some notes for you in my typical rapid-fire style &amp;#8211; hope they&amp;#8217;re useful to you.&lt;/p&gt;
+
+&lt;h2&gt;Ian McFarland&lt;/h2&gt;
+
+&lt;p&gt;Case study: divine caroline&lt;/p&gt;
+
+&lt;p&gt;Servers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Load balancer&lt;/li&gt;
+&lt;li&gt;Apache + mongrel&lt;/li&gt;
+&lt;li&gt;MySQL&lt;/li&gt;
+
+&lt;li&gt;SOLR&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ruby is slow.  Rails is slow.  Unoptimized app was slow &amp;#8211; 7 pages/sec with &lt;code&gt;ab&lt;/code&gt;.  So how can Rails possibly be?  150 pv/s with a simple text render.  This formed a sort of upper-bound, that ruled out fragment/action/partial caching, etc.  This brought the throughput to 3500 pv/s.  Except for page caching limitations:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cache coherency&lt;/li&gt;
+&lt;li&gt;Writes are more expensive&lt;/li&gt;
+&lt;li&gt;Page caching is not applicable to as many pages as you think&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But measure first.  Pivotal built a drop-in page caching extension to deal with cache coherency issues (soon to be at http://rubyforge.org/projects/pivotalrb)&lt;/p&gt;
+
+&lt;h2&gt;Jason Hoffman&lt;/h2&gt;
+
+&lt;p&gt;Jason somehow has the distinction of the first four commits in the Rails repository.  Joyent/TextDrive/Strongspace.&lt;/p&gt;
+
+&lt;p&gt;If your application is successful, you&amp;#8217;re going to have a lot of machines.  What happens when you have 1000s of machines, 100s of TB, 4 locations, etc.  Is this really a &lt;em&gt;Rails&lt;/em&gt; issue?  In a typical Joyent setup, Rails is only one of 26+ processes on the server stack.  So scaling it really doesn&amp;#8217;t mean much more than scaling any application.  Object creation in Ruby is fast, sockets and threads are slow.  So forget sockets and threads.&lt;/p&gt;
+
+&lt;p&gt;Instead, use DNS, load balancers, evented mongrels, JRuby/Java, DBMSes (not just RDBMS; LDAP, filesystem, etc.), Rails process doing Rails only, static assets going through a static server, federate and separate as much as you can.&lt;/p&gt;
+
+&lt;h2&gt;Jeremy LaTrasse&lt;/h2&gt;
+
+&lt;p&gt;Jeremy&amp;#8217;s job is about safety nets; about knowing the underlying infrastructure.  Is the hardware/OS/stack important?  Can you build safety nets around those so that you can spare cycles when you need to intrude into the system to troubleshoot?&lt;/p&gt;
+
+&lt;p&gt;Twitter is in a unique position with the volume of traffic to be able to find some pretty tough bugs, like the recent &lt;a href="http://dev.rubyonrails.org/changeset/6571"&gt;backtrace issue&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Bryan Cantrill&lt;/h2&gt;
+
+&lt;p&gt;Measure first!  Like Ian said.  Is software information?  Or a machine?  It&amp;#8217;s both.  Nothing else in human existence can claim this.  3 weeks after Bryan joined Sun, he was working with Jeff (ZFS architect) debugging an issue when Jeff retorted, &amp;#8220;Does it bother you that none of this exists?  It&amp;#8217;s just a representation of some plastic and metal morass in a backroom&amp;#8221; (slightly paraphrased).&lt;/p&gt;
+
+&lt;p&gt;We&amp;#8217;ve been living with bifurcated code &amp;#8211; &amp;#8220;if DEBUG; print something&amp;#8221; ad nauseum.  But this has a cost.  So dev code deviates from production code.  But we can&amp;#8217;t get the data we want, where it matters, in production.  Bryan goes on to describe the aforementioned &lt;a href="http://dev.rubyonrails.org/changeset/6571"&gt;backtrace issue&lt;/a&gt; and how it saved Twitter 33% CPU.  So don&amp;#8217;t pre-optimize, but you&amp;#8217;ve got to be prepared to go get the data.  In production.&lt;/p&gt;
+
+&lt;h2&gt;Q &amp;amp; A&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;What&amp;#8217;s the best way to move from one database to two databases (MySQL), when you scale past the volume of reads that overwhelms one?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Jason&lt;/strong&gt; doesn&amp;#8217;t like the replication approach, it&amp;#8217;s not fault tolerant.  Reference to &lt;a href="http://drnicwilliams.com/2007/04/12/magic-multi-connections-a-facility-in-rails-to-talk-to-more-than-one-database-at-a-time/"&gt;Dr Nic&amp;#8217;s magic multi-connections gem&lt;/a&gt;.  Reference to &lt;a href="http://revolutiononrails.blogspot.com/2007/04/plugin-release-actsasreadonlyable.html"&gt;acts_as_readonly&lt;/a&gt;.  Don&amp;#8217;t rely on things that are out of your control, start reading/writing to multiple locations, at the application level.  &lt;strong&gt;Jeremy&lt;/strong&gt;: So do you want to be in the business of writing SQL or C extensions to Rails?  What about &lt;a href="http://freshmeat.net/projects/mysql_proxy/"&gt;MySQL proxy&lt;/a&gt;?  Seems ok, but I might not trust it in production.  &lt;a href="http://jeremy.zawodny.com/mysql/mytop/" title="mytop - a top clone for MySQL"&gt;MyTop&lt;/a&gt;/&lt;a href="http://www.xaprb.com/blog/2006/07/02/innotop-mysql-innodb-monitor/"&gt;InnoTop&lt;/a&gt; will tell you about your query volume.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Virtualization: 4 virtual servers w/ web servers on top of a single physical server?  Why?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Jason&lt;/strong&gt;: Free BSD 4.9 on early pentium was the perfect balance of utilization.  18 CPUs by 64G RAM with virtual servers gets us back to that level of utilization.  &lt;strong&gt;Bryan&lt;/strong&gt;:  Not all virtualization solutions are equivalent! (Solaris containers/zones plug.)&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;RDBMSes are not good for web applications?  Why?  Can you give some examples?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Jason&lt;/strong&gt;: It depends on when you want to join.  When people are clicking, or pre-assembled.  Look at your application and put the data together before people request it.  Why does YouTube need an RDBMS?  It serves a file that people can comment on.&lt;/p&gt;
+
+&lt;p&gt;Mention of Dabble DB, ZFS, Jabber, Atom, Atom over Jabber, etc. as ways of innovative ways of storing objects, data, etc.  GData/GCal most certainly does not store its Atom files in an RDBMS.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Sell Rails apps and have the customer deploy it?  What options are available?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ian&lt;/strong&gt;: JRuby on Rails with a .war file is an interesting approach.  &lt;em&gt;What operational issues/ways to help with scaling remote deployments?&lt;/em&gt;  &lt;strong&gt;Jeremy&lt;/strong&gt;: Log files are the first line of defense.  &lt;strong&gt;Jason&lt;/strong&gt;: Corporate IT are comfortable with Java.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The pessimist in me says that my servers are going to fall over after 5 users.  How can I be prepared/not be optimistic about a traffic spike?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ian&lt;/strong&gt;: Load test the crap out of the app.  Find out the horizontal scaling point.  Use solutions like S3 for images.  Make sure you can scale by throwing hardware at it.  Eventually single points of failure will overcome you (such as a single database), but you can wait until you get to that point before doing something about it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Jason&lt;/strong&gt;: You can benchmark your processes, and get an idea of what they can do.  Most people that want to do something will be look at your stuff, and maybe signup.  So front-load and optimize your signup process, possibly by taking it out of Rails.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Jeremy&lt;/strong&gt;: Conversations with Zed, DHH, etc. have pointed out that sometimes &amp;#8220;Rails isn&amp;#8217;t good at that, take it out of Rails.&amp;#8221;  Same thing for the database.  Split those things out into a different application.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bryan&lt;/strong&gt;: Do your dry land work, know your toolchain, so that when the moment comes, you can dive in and find the problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;We have a migration that takes a week to run because of text processing.  GC was running after every 10th DB statement.  Used Rails bench GC patch to overcome the issue with the migration.  Any issue running these?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Jason&lt;/strong&gt;: We run those GC modifications and a few more in production, and they&amp;#8217;re fine.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Most comversations revolve around items like database is slow, or Ruby is slow.  How can we use DTrace to streamline the process?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Jeremy&lt;/strong&gt;:  We spent 20 minutes over lunch (plus some preparation) to find a Memcache issue.  It&amp;#8217;s worth it to spend a little time to learn the tool.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bryan&lt;/strong&gt;: &amp;#8220;Awk is God&amp;#8217;s gift to all of us.&amp;#8221;  When DTrace was being reviewed inside of Sun, folks commented &amp;#8220;This reminds us of awk.&amp;#8221;  &amp;#8220;Thanks!&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Jason&lt;/strong&gt;:  We&amp;#8217;re putting a tracing plugin in Rails as a remote process to collect data from a running app.  Apple has shown a commitment to get this in Leopard.  Textual and graphical output are possible.  I believe in DTrace a lot, and the tooling and documentation will go beyond its current state of an experts tool.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Lastly, what one closing thing would you like to say about Rails scalability?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ian&lt;/strong&gt;: Measure.&lt;br/&gt;
+&lt;strong&gt;Jason&lt;/strong&gt;: Don&amp;#8217;t use relational databases.&lt;br/&gt;
+&lt;strong&gt;Jeremy&lt;/strong&gt;: I thought it was a Joyent sales pitch.&lt;br/&gt;
+
+&lt;strong&gt;Bryan&lt;/strong&gt;: Use DTrace (with Joyent accelerators of course).&lt;br/&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author>
+      <name>Nick Sieger</name>
+    </author>
+
+    <id>urn:uuid:40171862-80d2-460f-9ad6-ead9fe29fd91</id>
+    <published>2007-05-19T20:34:00+00:00</published>
+    <updated>2007-07-27T06:04:58+00:00</updated>
+    <title>RailsConf 2007: Chris Wanstrath: Kickin' Ass with Cache-fu</title>
+    <link href="http://blog.nicksieger.com/articles/2007/05/19/railsconf-2007-chris-wanstrath-kickin-ass-with-cache-fu" rel="alternate" type="text/html" />
+    <category term="railsconf" scheme="http://blog.nicksieger.com/articles/tag/railsconf" />
+    <category term="railsconf2007" scheme="http://blog.nicksieger.com/articles/tag/railsconf2007" />
+
+    <content type="html">&lt;p&gt;Chris is here to talk about games, since he used to work for Gamespot.  He coded PHP, which is like training wheels without the bike.  He had to sit in a glass cube and help keep the site running during E3 last year.  There were 100 gajillion teenage boys during their lunch break hitting refresh, and it all blew up.  Couldn&amp;#8217;t even gzip the responses, because the servers heated up to much.  They served 50M pages in a day, without downtime.  They did it with Memcache.&lt;/p&gt;
+
+&lt;p&gt;Memcache is a distributed hash &amp;#8211; multiple daemons running on different servers.  Developed by Livejournal for their infrastructure, you just put up the servers, and they just work.&lt;/p&gt;
+
+&lt;p&gt;Should you use Memcache?  No.  &lt;a href="http://c2.com/xp/YouArentGonnaNeedIt.html"&gt;YAGNI&lt;/a&gt;, UYRDNI (unless you really do need it).&lt;/p&gt;
+
+&lt;h2&gt;Rails and Memcache&lt;/h2&gt;
+
+&lt;p&gt;Fragments, Actions, Sessions, Objects, cache it all.  You can use:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;memcache-client&lt;/code&gt; (by Robot-coop guys/Eric Hodel).  Marshal.unload is 40 times faster than Object.new/loading from the database.&lt;/li&gt;
+
+&lt;li&gt;CachedModel &amp;#8211; integration with ActiveRecord&lt;/li&gt;
+&lt;li&gt;Fragment Cache Store&lt;/li&gt;
+&lt;li&gt;Memcache session store&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;#8230;or&amp;#8230;&lt;/p&gt;
+
+&lt;h2&gt;&lt;code&gt;cache_fu&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Or, &lt;code&gt;acts_as_cached&lt;/code&gt;.  It knows about all the aforementioned objects, with a single YAML config file (&lt;code&gt;config/memcached.yml&lt;/code&gt;).  Word to the wise:  don&amp;#8217;t use names in your server config file.  Use IPs, avoid BIND and connections to the servers with every connection.  Don&amp;#8217;t let DNS outages bring down your servers.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;get_cache&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;expire_cache&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is all you need &amp;#8211; if you&amp;#8217;re using &lt;code&gt;set_cache&lt;/code&gt;, you probably don&amp;#8217;t understand how the plugin works.  Expire cache on the &amp;#8220;after save&amp;#8221; hook, which allows you to cache ID misses as well.&lt;/p&gt;
+
+&lt;div class="typocode"&gt;&lt;pre&gt;&lt;code class="typocode_ruby "&gt;&lt;span class="keyword"&gt;class &lt;/span&gt;&lt;span class="class"&gt;Presentation&lt;/span&gt; &lt;span class="punct"&gt;&amp;lt;&lt;/span&gt; &lt;span class="constant"&gt;ActiveRecord&lt;/span&gt;&lt;span class="punct"&gt;::&lt;/span&gt;&lt;span class="constant"&gt;Base&lt;/span&gt;
+
+  &lt;span class="ident"&gt;acts_as_cached&lt;/span&gt;
+  &lt;span class="ident"&gt;after_save&lt;/span&gt; &lt;span class="symbol"&gt;:expire_cache&lt;/span&gt;
+&lt;span class="keyword"&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Example: only cache published items&lt;/p&gt;
+
+&lt;div class="typocode"&gt;&lt;pre&gt;&lt;code class="typocode_ruby "&gt;&lt;span class="keyword"&gt;class &lt;/span&gt;&lt;span class="class"&gt;Presentation&lt;/span&gt; &lt;span class="punct"&gt;&amp;lt;&lt;/span&gt; &lt;span class="constant"&gt;ActiveRecord&lt;/span&gt;&lt;span class="punct"&gt;::&lt;/span&gt;&lt;span class="constant"&gt;Base&lt;/span&gt;
+
+  &lt;span class="ident"&gt;acts_as_cached&lt;/span&gt; &lt;span class="symbol"&gt;:conditions&lt;/span&gt; &lt;span class="punct"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="punct"&gt;'&lt;/span&gt;&lt;span class="string"&gt;published = 1&lt;/span&gt;&lt;span class="punct"&gt;'&lt;/span&gt;
+
+&lt;span class="keyword"&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Cached-scoped-finders (if somebody thinks of a good name, let Chris know).  The idea is to move custom finder logic to a method on your model, and then wrap a cache-scoping thingy around it.  &lt;code&gt;cache_fu&lt;/code&gt; ties this up nicely by giving you a &lt;code&gt;cached&lt;/code&gt; method on AR::Base.&lt;/p&gt;
+
+&lt;div class="typocode"&gt;&lt;pre&gt;&lt;code class="typocode_ruby "&gt;&lt;span class="keyword"&gt;class &lt;/span&gt;&lt;span class="class"&gt;Topic&lt;/span&gt; &lt;span class="punct"&gt;&amp;lt;&lt;/span&gt; &lt;span class="constant"&gt;ActiveRecord&lt;/span&gt;&lt;span class="punct"&gt;::&lt;/span&gt;&lt;span class="constant"&gt;Base&lt;/span&gt;
+
+  &lt;span class="keyword"&gt;def &lt;/span&gt;&lt;span class="method"&gt;self.weekly_popular&lt;/span&gt;
+    &lt;span class="constant"&gt;Topic&lt;/span&gt;&lt;span class="punct"&gt;.&lt;/span&gt;&lt;span class="ident"&gt;find&lt;/span&gt; &lt;span class="symbol"&gt;:all&lt;/span&gt;&lt;span class="punct"&gt;,&lt;/span&gt; &lt;span class="punct"&gt;...&lt;/span&gt;
+
+  &lt;span class="keyword"&gt;end&lt;/span&gt;
+&lt;span class="keyword"&gt;end&lt;/span&gt;
+
+&lt;span class="constant"&gt;Topic&lt;/span&gt;&lt;span class="punct"&gt;.&lt;/span&gt;&lt;span class="ident"&gt;cached&lt;/span&gt;&lt;span class="punct"&gt;(&lt;/span&gt;&lt;span class="symbol"&gt;:weekly_popular&lt;/span&gt;&lt;span class="punct"&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Adding date to cache key with &lt;code&gt;alias_method_chain&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class="typocode"&gt;&lt;pre&gt;&lt;code class="typocode_ruby "&gt;&lt;span class="keyword"&gt;def &lt;/span&gt;&lt;span class="method"&gt;self.cache_key_with_date&lt;/span&gt;&lt;span class="punct"&gt;(&lt;/span&gt;&lt;span class="ident"&gt;id&lt;/span&gt;&lt;span class="punct"&gt;)&lt;/span&gt;
+
+  &lt;span class="punct"&gt;...&lt;/span&gt;
+&lt;span class="keyword"&gt;end&lt;/span&gt;
+
+&lt;span class="keyword"&gt;class &lt;/span&gt;&lt;span class="punct"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="constant"&gt;self&lt;/span&gt;
+
+  &lt;span class="ident"&gt;alias_method_chain&lt;/span&gt; &lt;span class="symbol"&gt;:cache_key&lt;/span&gt;&lt;span class="punct"&gt;,&lt;/span&gt; &lt;span class="symbol"&gt;:date&lt;/span&gt;
+&lt;span class="keyword"&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Cached loads by ID: &lt;code&gt;Topic.find(1, 2, 3)&lt;/code&gt; moves to &lt;code&gt;Topic.get_cache(1, 2, 3)&lt;/code&gt;, which can parallelize calls to memcached and bring them back as they&amp;#8217;re ready.&lt;/p&gt;
+
+&lt;div class="typocode"&gt;&lt;pre&gt;&lt;code class="typocode_ruby "&gt;&lt;span class="ident"&gt;user_ids&lt;/span&gt; &lt;span class="punct"&gt;=&lt;/span&gt; &lt;span class="attribute"&gt;@topic&lt;/span&gt;&lt;span class="punct"&gt;.&lt;/span&gt;&lt;span class="ident"&gt;posts&lt;/span&gt;&lt;span class="punct"&gt;.&lt;/span&gt;&lt;span class="ident"&gt;map&lt;/span&gt;&lt;span class="punct"&gt;(&amp;amp;&lt;/span&gt;&lt;span class="symbol"&gt;:user_id&lt;/span&gt;&lt;span class="punct"&gt;).&lt;/span&gt;&lt;span class="ident"&gt;uniq&lt;/span&gt;
+
+&lt;span class="attribute"&gt;@users&lt;/span&gt; &lt;span class="punct"&gt;=&lt;/span&gt; &lt;span class="constant"&gt;User&lt;/span&gt;&lt;span class="punct"&gt;.&lt;/span&gt;&lt;span class="ident"&gt;get_cache&lt;/span&gt;&lt;span class="punct"&gt;(&lt;/span&gt;&lt;span class="ident"&gt;user_ids&lt;/span&gt;&lt;span class="punct"&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You can also cache associations, so that you&amp;#8217;re navigating associations via Memcache.&lt;/p&gt;
+
+&lt;p&gt;Cache overrides&lt;/p&gt;
+
+&lt;div class="typocode"&gt;&lt;pre&gt;&lt;code class="typocode_ruby "&gt;&lt;span class="keyword"&gt;class &lt;/span&gt;&lt;span class="class"&gt;ApplicationController&lt;/span&gt; &lt;span class="punct"&gt;&amp;lt;&lt;/span&gt; &lt;span class="constant"&gt;ActionController&lt;/span&gt;&lt;span class="punct"&gt;::&lt;/span&gt;&lt;span class="constant"&gt;Base&lt;/span&gt;
+
+  &lt;span class="ident"&gt;before_filter&lt;/span&gt; &lt;span class="symbol"&gt;:set_cache_override&lt;/span&gt;
+  &lt;span class="keyword"&gt;def &lt;/span&gt;&lt;span class="method"&gt;set_cache_override&lt;/span&gt;
+
+    &lt;span class="constant"&gt;ActsAsCached&lt;/span&gt;&lt;span class="punct"&gt;.&lt;/span&gt;&lt;span class="ident"&gt;skip_cache_gets&lt;/span&gt; &lt;span class="punct"&gt;=&lt;/span&gt; &lt;span class="punct"&gt;!!&lt;/span&gt;&lt;span class="ident"&gt;params&lt;/span&gt;&lt;span class="punct"&gt;[&lt;/span&gt;&lt;span class="symbol"&gt;:skip_cache&lt;/span&gt;&lt;span class="punct"&gt;]&lt;/span&gt;
+
+  &lt;span class="keyword"&gt;end&lt;/span&gt;
+&lt;span class="keyword"&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;reset_cache&lt;/code&gt;: Slow, uncached operations can sometimes queue up and wedge a site.  Instead, issue cache resets on completion of a request, rather than expiring beforehand.  That way, requests that continue to pile up will still use the cached copy until the rebuild is complete.&lt;/p&gt;
+
+&lt;div class="typocode"&gt;&lt;pre&gt;&lt;code class="typocode_ruby "&gt;&lt;span class="keyword"&gt;class &lt;/span&gt;&lt;span class="class"&gt;Presentation&lt;/span&gt; &lt;span class="punct"&gt;&amp;lt;&lt;/span&gt; &lt;span class="constant"&gt;ActiveRecord&lt;/span&gt;&lt;span class="punct"&gt;::&lt;/span&gt;&lt;span class="constant"&gt;Base&lt;/span&gt;
+
+  &lt;span class="ident"&gt;after_save&lt;/span&gt; &lt;span class="symbol"&gt;:reset_cache&lt;/span&gt;
+&lt;span class="keyword"&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Versioning: a way to expire cache on new code releases&lt;/p&gt;
+
+&lt;div class="typocode"&gt;&lt;pre&gt;&lt;code class="typocode_ruby "&gt;&lt;span class="keyword"&gt;class &lt;/span&gt;&lt;span class="class"&gt;Presentation&lt;/span&gt; &lt;span class="punct"&gt;&amp;lt;&lt;/span&gt; &lt;span class="constant"&gt;ActiveRecord&lt;/span&gt;&lt;span class="punct"&gt;::&lt;/span&gt;&lt;span class="constant"&gt;Base&lt;/span&gt;
+
+  &lt;span class="ident"&gt;acts_as_cached&lt;/span&gt; &lt;span class="symbol"&gt;:version&lt;/span&gt; &lt;span class="punct"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="number"&gt;1&lt;/span&gt;
+
+&lt;span class="keyword"&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Deployment: Chris recommends using Monit to ensure your Memcache servers are up.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;libketama&lt;/code&gt;: consistent hashing that gives you the ability to redeploy Memcache servers without invalidating all the keys.&lt;/p&gt;
+
+&lt;p&gt;Q: Page caching?  A:  Nginx with native Memcache page caching, but outside of Rails domains.&lt;/p&gt;
+
+&lt;p&gt;Lots of other questions, but dude, Chris talks too fast!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author>
+      <name>Nick Sieger</name>
+
+    </author>
+    <id>urn:uuid:f0f0e50c-df6a-47dc-81fe-0845c594512c</id>
+    <published>2007-05-19T19:30:06+00:00</published>
+    <updated>2007-07-27T06:05:05+00:00</updated>
+    <title>RailsConf 2007: Bradley Taylor: Virtual Clusters</title>
+    <link href="http://blog.nicksieger.com/articles/2007/05/19/railsconf-2007-bradley-taylor-virtual-clusters" rel="alternate" type="text/html" />
+    <category term="railsconf" scheme="http://blog.nicksieger.com/articles/tag/railsconf" />
+
+    <category term="railsconf2007" scheme="http://blog.nicksieger.com/articles/tag/railsconf2007" />
+    <content type="html">&lt;p&gt;How does Rails figure into virtualization?  Bradley will cover this topic with examples and case studies.  Along the way, hardware items may be mentioned, but are not critical.  Really, it&amp;#8217;s about the design of the clusters, not the bits of plumbing you use to connect them up.&lt;/p&gt;
+
+&lt;p&gt;Virtualization is partitioning of physical servers that allow you to run multiple servers on it. Xen, Virtuozzo, VMWare, Solaris containers, KVM, etc.  Bradley uses Xen.  The virtual servers share the same processor (hopefully multi-core), memory, storage, network cards (but with indepenent IP addresses), etc., but run independently of each other.  VPS, slice, container, accelerator, VM, it&amp;#8217;s all the same.  Memory, storage, and CPU can be guaranteed with the virtualization layer.&lt;/p&gt;
+
+&lt;p&gt;Why would you do this?  &lt;em&gt;Consolidate&lt;/em&gt; servers for less hardware and cost; &lt;em&gt;Isolate&lt;/em&gt; applications &amp;#8211; bad apps don&amp;#8217;t drag the server down, contain intrusions, use different software stacks; &lt;em&gt;Replicate&lt;/em&gt; &amp;#8211; easily create new servers and deploy in a standardized and automated way; &lt;em&gt;Utilize&lt;/em&gt; &amp;#8211; take advantage of all CPU, memory, storage, resources; &lt;em&gt;Allocate&lt;/em&gt; resources, give a server exactly what it requires, grow/shrink up and down, and balance them.  Bradley says, &amp;#8220;Once you go to virtualization you won&amp;#8217;t want to go back.  Do the simplest thing that could possibly work.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;Virtual clusters, then, are a bunch of servers cooperating toward a common goal &amp;#8211; if you have many versions or copies of one thing.  More than one customer, more than one version of software, etc.&lt;/p&gt;
+
+&lt;p&gt;For Rails, this means a lot of things: you can have many development environments and stages, take advantage of memory isolation, protect against PHP/Java, and make multiple-server scaling accessible.&lt;/p&gt;
+
+&lt;h2&gt;Examples&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Two servers for production and staging&lt;/li&gt;
+&lt;li&gt;Three for web/db/staging&lt;/li&gt;
+&lt;li&gt;Mixed languages &amp;#8211; instead of 1x1GB server use 3x300MB servers&lt;/li&gt;
+&lt;li&gt;High availability applications with fewer servers&lt;/li&gt;
+
+&lt;li&gt;Multiple applications &amp;#8211; one server per application&lt;/li&gt;
+&lt;li&gt;Standardized roles/appliances &amp;#8211; mail, ftp, dns, web, db&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;&lt;a href="http://www.eastmedia.com/"&gt;EastMedia&lt;/a&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;They can incubate customers in separate images&lt;/li&gt;
+&lt;li&gt;Dev/staging/production servers&lt;/li&gt;
+&lt;li&gt;Shared SVN/trac&lt;/li&gt;
+&lt;li&gt;2 physical servers =&gt; 8 virtual servers&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;h2&gt;Boom Design&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Again, multiple stages&lt;/li&gt;
+&lt;li&gt;Customer staging, with lower uptime requirements&lt;/li&gt;
+
+&lt;li&gt;Low-traffic apps on a single server, but everything else gets its own dedicated server&lt;/li&gt;
+&lt;li&gt;2GB memory spread across 9 virtual servers&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <author>
+      <name>Nick Sieger</name>
+
+    </author>
+    <id>urn:uuid:c67fa477-41f0-4798-9fa2-2c27ae65e537</id>
+    <published>2007-05-19T17:22:42+00:00</published>
+    <updated>2007-07-27T06:05:10+00:00</updated>
+    <title>RailsConf 2007: Saturday Morning Keynotes</title>
+    <link href="http://blog.nicksieger.com/articles/2007/05/19/railsconf-2007-saturday-morning-keynotes" rel="alternate" type="text/html" />
+    <category term="railsconf" scheme="http://blog.nicksieger.com/articles/tag/railsconf" />
+
+    <category term="railsconf2007" scheme="http://blog.nicksieger.com/articles/tag/railsconf2007" />
+    <content type="html">&lt;p&gt;&lt;strong&gt;Cyndi Mitchell &amp;#8211; ThoughtWorks Studios&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Enterprise (the &amp;#8220;e&amp;#8221; word)&lt;/p&gt;
+
+&lt;p&gt;Before IT got involved, &amp;#8220;enterprise&amp;#8221; was a bold new venture.  Toyota manufacturing, Skype disruption of telephony.&lt;/p&gt;
+
+&lt;p&gt;Enterprise in terms of IT has come to mean bloatware, incompetence, corruption, waste of time, no value.&lt;/p&gt;
+
+&lt;p&gt;So this is the battle: The enterprise (to boldly go where no man has gone before) we need to reclaim vs. the bloatware/competence/corruption/fear-based selling etc.&lt;/p&gt;
+
+&lt;p&gt;RubyWorks &amp;#8211; package stack with haproxy, mongrel, monit through an RPM repository&lt;/p&gt;
+
+&lt;p&gt;For JRuby support, call &lt;a href="http://ola-bini.blogspot.com/"&gt;Ola&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tim Bray &amp;#8211; Web Guy from Sun Microsystems&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Change the world that are better than just using a cool web framework: http://pragmaticstudio.com/donate/&lt;/p&gt;
+
+&lt;p&gt;Sun loves Ruby.  Ruby &lt;em&gt;and&lt;/em&gt; Rails, that is.  The impact of the Ruby language is going to be at least as big as Rails is for web development.&lt;/p&gt;
+
+&lt;p&gt;Sun provided servers for Ruby 2.0 development, and can provide servers for your potentially cool, worthy, open source project, just drop Tim an email.&lt;/p&gt;
+
+&lt;p&gt;A few more obligatory plugs for NetBeans and Sun sponsoring the conference.  &amp;#8220;Pre-alpha,&amp;#8221; he says.  Hmm, I wonder what &lt;a href="http://blogs.sun.com/tor/"&gt;Tor&lt;/a&gt; would say about that!&lt;/p&gt;
+
+&lt;p&gt;JRuby:  when would you use JRuby vs. Ruby?  If you have no pain, keep using C Ruby.  But if you have management concerns, deployment concerns, etc. then by all means do try it!&lt;/p&gt;
+
+&lt;p&gt;Obligatory handshake/sandal connection with ThoughtWorks and Cyndi &amp;#8211; running &lt;a href="http://studios.thoughtworks.com/2007/5/7/mingle-to-run-on-jruby"&gt;Mingle&lt;/a&gt; (and cruisecontrol.rb) with JRuby.&lt;/p&gt;
+
+&lt;p&gt;Sun: &amp;#8220;Hi, the answer is Java, what was the question?&amp;#8221;  So why would Sun want to support Ruby?  Well, you guys are programmers.  Programmers who deliver quality software fast.  And those programmers need computers, and OSes, and web servers, and support and services, etc.  Plug, plug, plug.&lt;/p&gt;
+
+&lt;p&gt;How do you make money on free products?  Sun has open-sourcing Java, Solaris, even Sparc.  Joyent is open-sourcing their stuff.  Where does the money come from?  1. Adoption  2.  Deployment  3.  Monetization at the point of value&lt;/p&gt;
+
+&lt;p&gt;What if we win?  Are our problems over?  No, we&amp;#8217;ll have to deal with Java. And .NET.  And PHP.  &lt;em&gt;From the audience: And COBOL.&lt;/em&gt;  The Network Is The Computer.  The Network Is Heterogeneous.  &lt;strong&gt;Deal with it.&lt;/strong&gt;  So how do we interoperate?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Just Run Java (and JRuby, of course!, and JavaScript, and PHP, etc.)&lt;/li&gt;
+&lt;li&gt;Use Atom/REST.  Everything should have a publish button.  &lt;em&gt;Don&amp;#8217;t use WS-DeathStar or WCF or WSIT.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Developer issues: Scaling, Static vs. Dynamic, Maintainability, Concurrency, Tooling, Integration, Time to Market.  Which two of these matter the most?&lt;/p&gt;
+
+&lt;p&gt;Tim&amp;#8217;s final assertion: Maintainability and Time to Market, and that&amp;#8217;s why we&amp;#8217;re all at RailsConf.&lt;/p&gt;</content>
+  </entry>
+</feed>
