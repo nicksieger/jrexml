@@ -96,4 +96,8 @@ XML
       parse_and_verify f.read
     end
   end
+
+  it "should handle a REXML::Source argument" do
+    parse_and_verify REXML::SourceFactory.create_from("<document/>")
+  end
 end
