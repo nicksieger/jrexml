@@ -2,7 +2,8 @@ module JREXML
   begin
     XmlPullParser = Java::org.xmlpull.v1.XmlPullParser
   rescue
-    XPP_VERSION = "1.1.3.4-RC8"
+    raise LoadError, "JREXML is only for JRuby" if RUBY_PLATFORM !~ /java/
+    XPP_VERSION = "1.1.4"
     begin
       require "xpp3-#{XPP_VERSION}.jar"
       @triedxpp ||= 0
@@ -13,7 +14,6 @@ module JREXML
         "you need to include xpp3-#{XPP_VERSION}.jar on the classpath"
     end
   end
-
 
   START_DOCUMENT         = XmlPullParser::START_DOCUMENT
   END_DOCUMENT           = XmlPullParser::END_DOCUMENT

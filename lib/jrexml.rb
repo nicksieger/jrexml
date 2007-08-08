@@ -1,7 +1,7 @@
 require 'rexml/parsers/baseparser'
 require 'jrexml/java_pull_parser'
 
-class REXML::Parsers::BaseParser
+class REXML::Parsers::BaseParser #:nodoc:
   # Extend every REXML base parser with a version that uses a Java pull parser 
   # library
   def self.new(*args)
