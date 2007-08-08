@@ -28,8 +28,6 @@ module JREXML
   
   ADJACENT_EVENTS = [TEXT, ENTITY_REF]
 
-  class XmlParsingError < StandardError; end
-
   module JavaPullParser
     def self.factory
       @factory ||= proc do
@@ -43,6 +41,7 @@ module JREXML
     def stream=(source)
       enc = source.encoding if source.respond_to?(:encoding)
       @source = JavaPullParser.factory.newPullParser
+      def @source.buffer; ""; end # In case REXML tries to call #buffer on our source
       @source.setInput java.io.ByteArrayInputStream.new(get_bytes(source)), enc
     end
 
@@ -150,7 +149,7 @@ module JREXML
         begin
           @event_stack << @source.nextToken
         rescue NativeException => e
-          raise XmlParsingError, e.message
+          raise REXML::ParseException, e.message
         end
       end
       @event_stack

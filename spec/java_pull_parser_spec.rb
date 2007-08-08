@@ -100,4 +100,8 @@ XML
   it "should handle a REXML::Source argument" do
     parse_and_verify REXML::SourceFactory.create_from("<document/>")
   end
+
+  it "should raise a REXML::ParseException on malformed XML" do
+    lambda { parse_and_verify "<div>at&t" }.should raise_error(REXML::ParseException)
+  end
 end
