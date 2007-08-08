@@ -5,7 +5,7 @@ MANIFEST = FileList["History.txt", "Manifest.txt", "README.txt", "LICENSE.txt", 
 
 begin
   require 'hoe'
-  hoe = Hoe.new("jrexml", "0.5.1") do |p|
+  hoe = Hoe.new("jrexml", "0.5.2") do |p|
     p.rubyforge_name = "caldersphere"
     p.url = "http://caldersphere.rubyforge.org/jrexml"
     p.author = "Nick Sieger"
