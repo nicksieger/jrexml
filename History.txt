@@ -1,3 +1,7 @@
+= 0.5.2
+
+* Raise REXML::ParseException on parse errors, instead of a custom error.
+
 = 0.5.1
 
 * Fix an issue that allows JREXML to work with REXML::Source and stream parsing.
