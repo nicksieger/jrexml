@@ -41,8 +41,9 @@ module JREXML
     end
 
     def stream=(source)
+      enc = source.encoding if source.respond_to?(:encoding)
       @source = JavaPullParser.factory.newPullParser
-      @source.setInput java.io.ByteArrayInputStream.new(get_bytes(source)), nil
+      @source.setInput java.io.ByteArrayInputStream.new(get_bytes(source)), enc
     end
 
     # Returns true if there are no more events
@@ -156,6 +157,7 @@ module JREXML
     end
 
     def get_bytes(src)
+      src = src.buffer if src.respond_to?(:buffer) # REXML::Source crap
       string = if src.respond_to?(:read)
         src.read
       else
