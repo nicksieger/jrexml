@@ -1,3 +1,5 @@
+require 'rexml/parseexception'
+
 module JREXML
   begin
     XmlPullParser = Java::org.xmlpull.v1.XmlPullParser
@@ -98,7 +100,12 @@ module JREXML
           when TEXT
             text << @source.text
           when ENTITY_REF
-            text << "&#{@source.name};"
+            val = @source.text
+            if val
+              text << val
+            else
+              text << "&#{@source.name};"
+            end
           end
           event = event_stack.shift
           break unless event
@@ -108,7 +115,7 @@ module JREXML
           end
         end
       end
-      convert_event_without_text_or_entityref(event)      
+      convert_event_without_text_or_entityref(event)
     end
 
     def convert_event_without_text_or_entityref(event)
@@ -167,6 +174,10 @@ module JREXML
 
     def debug_event(event)
       "XmlPullParser::#{XmlPullParser::TYPES[event]}" if event
+    end
+
+    def using_jrexml?
+      true
     end
   end
 end

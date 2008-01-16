@@ -3,11 +3,10 @@ require File.dirname(__FILE__) + '/spec_helper'
 describe JREXML::JavaPullParser do
   def parse(source)
     @parser = REXML::Parsers::BaseParser.new(source)
-    @parser.extend(JREXML::JavaPullParser)
     @parser.stream = source
     (class << @parser; self; end).send :define_method, "base_events" do
       events = []
-      baseparser = REXML::Parsers::BaseParser.new(source)
+      baseparser = REXML::Parsers::BaseParser.new_default_parser(source)
       loop do
         event = baseparser.pull
         events << event
@@ -20,6 +19,8 @@ describe JREXML::JavaPullParser do
 
   def verify_events
     @parser.base_events.each do |evt|
+      # still need to expand entities to compare to REXML's base parser
+      evt[1] = REXML::Text::unnormalize(evt[1]) if evt[0] == :text
       @parser.pull.should == evt
     end
     @parser.should be_empty
@@ -28,6 +29,10 @@ describe JREXML::JavaPullParser do
   def parse_and_verify(source)
     parse source
     verify_events
+  end
+
+  it "should use JREXML by default once it's loaded" do
+    REXML::Parsers::BaseParser.new("<doc/>").should be_using_jrexml
   end
 
   it "should parse a document consisting of a single empty element" do
@@ -89,6 +94,15 @@ XML
 
   it "should handle simple entity refs" do
     parse_and_verify %q(<document>text &lt; other &gt;&#x20;text</document>)
+  end
+
+  it "should not expand extended (e.g., HTML) entities" do
+    parse "<doc>&eacute;</doc>"
+    events = @parser.all_events
+
+    events[0].should == [:start_element, "doc", {}]
+    events[1].should == [:text, "&eacute;"]
+    events[2].should == [:end_element, "doc"]
   end
 
   it "should handle a longer, more complex document (50+K atom feed)" do

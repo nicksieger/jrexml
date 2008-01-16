@@ -1,3 +1,7 @@
+= 0.5.3
+
+* Take advantage of the fact that the XPP parser expands entities for us, so that we don't have to use the ridiculously slow REXML::Text::unnormalize method.
+
 = 0.5.2
 
 * Raise REXML::ParseException on parse errors, instead of a custom error.

@@ -3,9 +3,12 @@ require 'spec/rake/spectask'
 MANIFEST = FileList["History.txt", "Manifest.txt", "README.txt", "LICENSE.txt", "Rakefile",
   "lib/**/*.rb", "lib/xpp*", "spec/**/*.rb", "spec/*.xml"]
 
+File.open("Manifest.txt", "w") {|f| MANIFEST.each {|l| f.puts l } }
+
+require './lib/jrexml/version'
 begin
   require 'hoe'
-  hoe = Hoe.new("jrexml", "0.5.2") do |p|
+  hoe = Hoe.new("jrexml", JREXML::Version) do |p|
     p.rubyforge_name = "caldersphere"
     p.url = "http://caldersphere.rubyforge.org/jrexml"
     p.author = "Nick Sieger"
