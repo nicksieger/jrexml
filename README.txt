@@ -2,7 +2,7 @@ JREXML is an add-on for JRuby that uses a Java pull parser library to speed up R
 
 REXML is, unfortunately, painfully slow running under JRuby at the moment due to the slowness of regular expression parsing. JREXML shoves a small wrapper around XPP3/MXP1 (http://www.extreme.indiana.edu/xgws/xsoap/xpp/mxp1/) into the guts of REXML, disabling the regular expression parser and providing close to a 10x speedup.
 
-= Install
+== Install
 
 Simply install the gem under JRuby:
 
@@ -13,7 +13,17 @@ And require 'jrexml' to speed up REXML.
     gem 'jrexml'
     require 'jrexml'
 
-= License
+== Source
+
+You can get the JREXML source using Git, in any of the following ways:
+
+    git clone git://git.caldersphere.net/jrexml.git
+    git clone http://git.caldersphere.net/jrexml.git
+    git clone git://github.com/nicksieger/jrexml.git
+
+You can also download a tarball of the latest JREXML source at http://github.com/nicksieger/jrexml/tree/master.
+
+== License
 
 This software is released under an MIT license.  For details, see the LICENSE.txt file included with the distribution.  The software is copyright (c) 2007 Nick Sieger <nicksieger@gmail.com>.
 
