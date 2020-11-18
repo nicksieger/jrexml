@@ -28,3 +28,4 @@ You can also download a tarball of the latest JREXML source at http://github.com
 This software is released under an MIT license.  For details, see the LICENSE.txt file included with the distribution.  The software is copyright (c) 2007 Nick Sieger <nicksieger@gmail.com>.
 
 This product includes software developed by the Indiana University Extreme! Lab (http://www.extreme.indiana.edu/).  See the license in the file lib/xpp3.LICENSE.txt for details.
+And that's all
